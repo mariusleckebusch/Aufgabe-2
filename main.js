@@ -1,3 +1,5 @@
+// 1+2+3+4+5+6
+
 document.getElementsByTagName('button')[0].addEventListener('click', selectfunction);
 
 function selectfunction() {
@@ -19,6 +21,7 @@ function fromto() {
             var i = from;
             while (i <= to) {
                 num = num + i;
+                console.log(num+i)
                 i = i + 1;
                 var b = document.createElement('p');
                 var number = document.createTextNode(num);
@@ -48,4 +51,12 @@ var from = parseInt(document.getElementById('from').value);
             }
         document.getElementById('result').innerText = list;
     }
+}
+
+var num = 0;
+var i = 1;
+while (i <= 100) {
+    num = num + i;
+    i = i + 1;
+    console.log(num);
 }
