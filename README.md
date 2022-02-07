@@ -1,0 +1,2 @@
+# Aufgabe 2 (Addiere Zahlen von 1 bis 100)
+Schreiben Sie ein Programm, das alle Zahlen von 1 bis 100 summiert. Wählen Sie dafür einen möglichst eleganten Ansatz, implementieren Sie zwei verschiedenee Lösungswege
