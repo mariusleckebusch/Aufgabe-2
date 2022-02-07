@@ -6,17 +6,22 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Aufgabe 2</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='main.js'></script>
 </head>
 
 <body>
+    <label>Function</label>
+    <select id="select">
+        <option>FromTo</option>
+        <option>FromToArray</option>
+    </select>
     <label for="from">Von:</label>
-    <input type="text" name="from" id="from">
+    <input type="number" name="from" id="from">
     <label for="to">Zu:</label>
-    <input type="text" name="to" id="to">
+    <input type="number" name="to" id="to">
     <button id="button">Absenden</button>
     <p>Result:</p>
     <div id="result"></div>
+    <script src='main.js'></script>
 </body>
 
 </html>
