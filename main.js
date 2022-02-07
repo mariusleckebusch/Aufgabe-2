@@ -1,7 +1,4 @@
-for(const e of document.querySelectorAll('button')) {
-    e.addEventListener('click', fromto);
-}
-
+document.getElementById('button').addEventListener('click', fromto);
 function fromto() {
     var from = document.getElementById('from').innerText;
     var to = document.getElementById('to').innerText;
