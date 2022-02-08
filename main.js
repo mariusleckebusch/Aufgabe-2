@@ -1,18 +1,38 @@
-//Lösungsweg 1
+var y;
+var x;
+var erg;
+var hälfte;
+var von = 2; //i
+var bis = 100;
+var w = bis;
+var rest = 0;
+const result = (bis % 2  == 0) ? "even" : "odd";
 
-var num = 0;
-var i = 1;
-while (i <= 100) {
-    num = num + i;
-    i = i + 1;
-    console.log(num);
+if (result === 'even') {
+        w=w+1
+        for(var i = von; i <= bis; i++) {
+            w-1;
+            y = bis-i;
+            x = bis-y;
+        }
+        hälfte = bis / 2;
+        console.log("Hälfte:", hälfte)
+        erg = w * x/2;
+        console.log("Ergebnis:", erg)
 }
 
-
-//Lösungsweg 2
-
-var sum = 0;
-for(var i =1; i <= 100; i++) {
-    sum = sum + i;
-    console.log(sum)
+if (result === 'odd') {
+    bis = bis - 1
+    rest = rest + 1
+    for(var i = von; i <= bis; i++) {
+        w-1;
+        y = bis-i;
+        x = bis-y;
+    }
+    bis = bis+1
+    hälfte = bis / 2;
+    console.log("Hälfte:", hälfte)
+    console.log("Rest:", rest)
+    erg = w * x/2 + w;
+    console.log("Ergebnis:", erg)
 }
