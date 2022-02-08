@@ -24,3 +24,10 @@ for(var i = from; i <= to+1; i++) {
 }
 console.log(c * to/2)
 ```
+
+Lösungsweg 3 (Musterlösung)
+```js
+var _start = 1;
+var _ende = 100;
+var _summe = (_start + _ende) * (1 + _ende - _start) /2;
+```
